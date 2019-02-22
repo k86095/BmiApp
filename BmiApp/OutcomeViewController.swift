@@ -10,6 +10,7 @@ import UIKit
 
 class OutcomeViewController: UIViewController {
     
+    @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var tvOutcome: UITextView!
     @IBAction func backClick(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -21,7 +22,7 @@ class OutcomeViewController: UIViewController {
         if fileManager.fileExists(atPath: dataUrl.path){
             if let bmidata = try? Data(contentsOf: dataUrl){
                 if let bmi = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(bmidata) as? Bmi {
-                    tvOutcome.text = "BMI value = \(bmi.value)"
+                    valueLabel.text = "你的BMI是\(String(format: "%.2f",bmi.value))"
                     tvOutcome.text = bmi.show(value: bmi.value)
                 } else{
                     tvOutcome.text = "error"

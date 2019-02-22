@@ -16,19 +16,21 @@ class Bmi : NSObject , NSSecureCoding{
     let height: Double?
     let weight: Double?
     
-//    var value:Double{
-//        if let height = height , let weight = weight{
-//            var bmi = weight / pow((height/100),2)
-//        }
-//    }
-    
-    var value: Double {
-        if weight == nil || height == nil {
+    var value:Double{
+        if let height = height , let weight = weight{
+            return weight / pow((height/100),2)
+        }else{
             return 0.0
-        } else {
-            return weight! / pow((height! / 100), 2)
         }
     }
+    
+//    var value: Double {
+//        if weight == nil || height == nil {
+//            return 0.0
+//        } else {
+//            return weight! / pow((height! / 100), 2)
+//        }
+//    }
     
         init(height: Double , weight: Double) {
             self.height = height
@@ -46,13 +48,13 @@ class Bmi : NSObject , NSSecureCoding{
     }
     func show(value:Double) -> String {
         if value >= 30 {
-            return "Obese"
+            return "死肥豬"
         } else if value >= 25{
-                return "Overweight"
+                return "肥肉太多"
         } else if value >= 18.5{
-            return "Normal weight"
+            return "肥瘦勻稱"
         } else {
-            return "Underweight"
+            return "夭壽骨"
         }
     }
     

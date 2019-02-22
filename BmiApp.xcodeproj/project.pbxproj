@@ -14,7 +14,7 @@
 		1D175FD0221E924000A18C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D175FCE221E924000A18C92 /* LaunchScreen.storyboard */; };
 		1D175FD8221E92A000A18C92 /* Bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D175FD7221E92A000A18C92 /* Bmi.swift */; };
 		1D175FDA221E99BE00A18C92 /* OutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D175FD9221E99BE00A18C92 /* OutcomeViewController.swift */; };
-		1D175FDC221EA10B00A18C92 /* MyFileFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D175FDB221EA10B00A18C92 /* MyFileFunc.swift */; };
+		1D1E083E221FE7AA00046118 /* funcForSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E083D221FE7AA00046118 /* funcForSave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		1D175FD1221E924000A18C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D175FD7221E92A000A18C92 /* Bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bmi.swift; sourceTree = "<group>"; };
 		1D175FD9221E99BE00A18C92 /* OutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomeViewController.swift; sourceTree = "<group>"; };
-		1D175FDB221EA10B00A18C92 /* MyFileFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileFunc.swift; sourceTree = "<group>"; };
+		1D1E083D221FE7AA00046118 /* funcForSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcForSave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +63,12 @@
 				1D175FC5221E923E00A18C92 /* AppDelegate.swift */,
 				1D175FC7221E923E00A18C92 /* ViewController.swift */,
 				1D175FC9221E923E00A18C92 /* Main.storyboard */,
+				1D1E083D221FE7AA00046118 /* funcForSave.swift */,
 				1D175FD7221E92A000A18C92 /* Bmi.swift */,
 				1D175FD9221E99BE00A18C92 /* OutcomeViewController.swift */,
 				1D175FCC221E924000A18C92 /* Assets.xcassets */,
 				1D175FCE221E924000A18C92 /* LaunchScreen.storyboard */,
 				1D175FD1221E924000A18C92 /* Info.plist */,
-				1D175FDB221EA10B00A18C92 /* MyFileFunc.swift */,
 			);
 			path = BmiApp;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D175FDC221EA10B00A18C92 /* MyFileFunc.swift in Sources */,
 				1D175FD8221E92A000A18C92 /* Bmi.swift in Sources */,
+				1D1E083E221FE7AA00046118 /* funcForSave.swift in Sources */,
 				1D175FDA221E99BE00A18C92 /* OutcomeViewController.swift in Sources */,
 				1D175FC8221E923E00A18C92 /* ViewController.swift in Sources */,
 				1D175FC6221E923E00A18C92 /* AppDelegate.swift in Sources */,

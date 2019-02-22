@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tfHeight: UITextField!
     @IBOutlet weak var tfWeight: UITextField!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var tipLabel: UILabel!
     
     var bmi: Bmi?
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         
         let dataUrl = fileInDocuments(fileName: "bmiData")
         do{
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         let height = Double(tfHeight.text ?? "") ?? -1
         let weight = Double(tfWeight.text ?? "") ?? -1
         if height < 0 || weight < 0 {
-            label.text = "Error!"
+            tipLabel.text = "請輸入正確的數值"
             return false
         }else{
             bmi = Bmi(height: height, weight: weight)
