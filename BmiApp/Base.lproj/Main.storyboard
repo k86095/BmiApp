@@ -25,8 +25,12 @@
                                     <constraint firstAttribute="height" constant="30" id="WEo-sX-QvT"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="hideKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="d4N-hU-vwg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1Ds-nQ-laQ"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="體重（單位：公斤）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JxY-VA-fBk">
                                 <rect key="frame" x="20" y="178" width="374" height="30"/>
@@ -35,19 +39,24 @@
                                     <constraint firstAttribute="height" constant="30" id="X2k-Vm-dAO"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="closeKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="7cv-ko-G2x"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cAX-qM-Yre"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64D-tH-1c6">
                                 <rect key="frame" x="166" y="312" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="開始檢測"/>
                                 <connections>
+                                    <action selector="calculateButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pH-NS-fJ8"/>
                                     <segue destination="klr-LK-vmd" kind="presentation" id="lkX-r2-1Az"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請輸入身高和體重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55p-bL-Bra">
-                                <rect key="frame" x="125.5" y="248" width="163.5" height="24"/>
+                                <rect key="frame" x="125" y="248" width="164" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,17 +72,15 @@
                         <constraints>
                             <constraint firstItem="64D-tH-1c6" firstAttribute="top" secondItem="55p-bL-Bra" secondAttribute="bottom" constant="40" id="2aa-RU-7ks"/>
                             <constraint firstItem="64D-tH-1c6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4OY-vt-5xF"/>
-                            <constraint firstItem="iAI-cK-4MF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9Q-tC-Wj1"/>
-                            <constraint firstItem="iAI-cK-4MF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rtv-OE-amK"/>
                             <constraint firstItem="55p-bL-Bra" firstAttribute="top" secondItem="JxY-VA-fBk" secondAttribute="bottom" constant="40" id="SWT-D4-SlP"/>
                             <constraint firstItem="KPg-OS-bJW" firstAttribute="top" secondItem="iAI-cK-4MF" secondAttribute="bottom" constant="40" id="UC7-yD-QH5"/>
-                            <constraint firstItem="iAI-cK-4MF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zfy-7s-mQe"/>
                             <constraint firstItem="55p-bL-Bra" firstAttribute="centerX" secondItem="JxY-VA-fBk" secondAttribute="centerX" id="bBR-aX-Xbh"/>
-                            <constraint firstItem="iAI-cK-4MF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bsc-90-gNv"/>
+                            <constraint firstItem="iAI-cK-4MF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0y-TY-icP"/>
                             <constraint firstItem="JxY-VA-fBk" firstAttribute="top" secondItem="KPg-OS-bJW" secondAttribute="bottom" constant="20" id="dzK-P1-nct"/>
+                            <constraint firstItem="iAI-cK-4MF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iMI-F1-1jJ"/>
+                            <constraint firstItem="iAI-cK-4MF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mfX-MT-rEj"/>
                             <constraint firstItem="JxY-VA-fBk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="myY-6D-RCz"/>
                             <constraint firstItem="KPg-OS-bJW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xMB-Te-wIH"/>
-                            <constraint firstItem="iAI-cK-4MF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="y2g-2w-lHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -118,8 +125,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-2A-1Mk">
-                                <rect key="frame" x="190" y="248.5" width="34" height="30"/>
-                                <state key="normal" title="back"/>
+                                <rect key="frame" x="168.5" y="248.5" width="77" height="30"/>
+                                <state key="normal" title="返回前一頁"/>
                                 <connections>
                                     <action selector="backClick:" destination="klr-LK-vmd" eventType="touchUpInside" id="d7e-F2-vt3"/>
                                 </connections>

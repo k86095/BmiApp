@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var tfHeight: UITextField!
     @IBOutlet weak var tfWeight: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,6 +42,21 @@ class ViewController: UIViewController {
             return true
         }
     }
+    
+    @IBAction func hideKeyboard(_ sender: Any) {
+    }
+    @IBAction func closeKeyboard(_ sender: Any) {
+    }
+    
+    @IBAction func calculateButtonClick(_ sender: Any) {
+//        tfWeight.resignFirstResponder()
+//        tfHeight.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 
 
 }
