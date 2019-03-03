@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextViewDelegate {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tfHeight: UITextField!
     @IBOutlet weak var tfWeight: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -42,15 +42,10 @@ class ViewController: UIViewController, UITextViewDelegate {
             return true
         }
     }
-    
-    @IBAction func hideKeyboard(_ sender: Any) {
-    }
-    @IBAction func closeKeyboard(_ sender: Any) {
-    }
-    
-    @IBAction func calculateButtonClick(_ sender: Any) {
-//        tfWeight.resignFirstResponder()
-//        tfHeight.resignFirstResponder()
+        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

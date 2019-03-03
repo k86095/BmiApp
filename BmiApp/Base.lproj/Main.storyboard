@@ -28,7 +28,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="hideKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="d4N-hU-vwg"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="1Ds-nQ-laQ"/>
                                 </connections>
                             </textField>
@@ -42,7 +41,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="closeKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="7cv-ko-G2x"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="cAX-qM-Yre"/>
                                 </connections>
                             </textField>
@@ -51,7 +49,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="開始檢測"/>
                                 <connections>
-                                    <action selector="calculateButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pH-NS-fJ8"/>
                                     <segue destination="klr-LK-vmd" kind="presentation" id="lkX-r2-1Az"/>
                                 </connections>
                             </button>
