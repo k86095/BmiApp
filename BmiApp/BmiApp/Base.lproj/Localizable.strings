@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  BmiApp
+
+  Created by 方錦泉 on 2019/3/4.
+  Copyright © 2019 方錦泉. All rights reserved.
+*/
+"fat" = "死肥豬";
+"large" = "肥肉太多";
+"fit" = "肥瘦勻稱";
+"thin" = "夭壽骨";
+"error" = "請輸入正確的數值";
+"value" = "你的BMI是";

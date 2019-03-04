@@ -34,8 +34,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         let height = Double(tfHeight.text ?? "") ?? -1
         let weight = Double(tfWeight.text ?? "") ?? -1
+        let error = NSLocalizedString("error", comment:"")
         if height < 0 || weight < 0 {
-            tipLabel.text = "請輸入正確的數值"
+            tipLabel.text = error
             return false
         }else{
             bmi = Bmi(height: height, weight: weight)

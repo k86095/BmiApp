@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  BmiApp
+
+  Created by 方錦泉 on 2019/3/4.
+  Copyright © 2019 方錦泉. All rights reserved.
+*/
+"fat" = "Obese";
+"large" = "Overweight";
+"fit" = "Normalweight";
+"thin" = "Underweight";
+"error" = "Please key correct value";
+"value" = "Your BMI is ";

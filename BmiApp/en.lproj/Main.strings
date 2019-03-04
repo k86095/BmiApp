@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "請輸入身高和體重"; ObjectID = "55p-bL-Bra"; */
+"55p-bL-Bra.text" = "Please key your height and weight";
+
+/* Class = "UIButton"; normalTitle = "開始檢測"; ObjectID = "64D-tH-1c6"; */
+"64D-tH-1c6.normalTitle" = "start calculate";
+
+/* Class = "UITextField"; placeholder = "體重（單位：公斤）"; ObjectID = "JxY-VA-fBk"; */
+"JxY-VA-fBk.placeholder" = "weight（unit：kilogram）";
+
+/* Class = "UITextField"; placeholder = "身高（單位：公分）"; ObjectID = "KPg-OS-bJW"; */
+"KPg-OS-bJW.placeholder" = "height（unit：centimeter）";
+
+/* Class = "UINavigationItem"; title = "BMI計算"; ObjectID = "P7U-eA-yIm"; */
+"P7U-eA-yIm.title" = "BMI calculation";
+
+/* Class = "UIButton"; normalTitle = "返回前一頁"; ObjectID = "dhS-2A-1Mk"; */
+"dhS-2A-1Mk.normalTitle" = "Back";
+
+/* Class = "UITextView"; text = "default"; ObjectID = "fFz-Gl-JGT"; */
+"fFz-Gl-JGT.text" = "default";
+
+/* Class = "UILabel"; text = "Bmi="; ObjectID = "tLi-hs-WvR"; */
+"tLi-hs-WvR.text" = "Bmi=";
+
+/* Class = "UINavigationItem"; title = "檢測結果"; ObjectID = "vnm-hz-O2c"; */
+"vnm-hz-O2c.title" = "outcome";

@@ -47,14 +47,18 @@ class Bmi : NSObject , NSSecureCoding{
         weight = aDecoder.decodeObject(of: NSNumber.self, forKey: "weight") as? Double
     }
     func show(value:Double) -> String {
+        let fat = NSLocalizedString("fat", comment: "")
+        let large = NSLocalizedString("large", comment: "")
+        let fit = NSLocalizedString("fit", comment: "")
+        let thin = NSLocalizedString("thin", comment: "")
         if value >= 30 {
-            return "死肥豬"
+            return fat
         } else if value >= 25{
-                return "肥肉太多"
+                return large
         } else if value >= 18.5{
-            return "肥瘦勻稱"
+            return fit
         } else {
-            return "夭壽骨"
+            return thin
         }
     }
     

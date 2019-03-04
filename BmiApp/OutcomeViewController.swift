@@ -19,10 +19,11 @@ class OutcomeViewController: UIViewController {
         super.viewDidLoad()
         let fileManager = FileManager()
         let dataUrl = fileInDocuments(fileName: "bmiData")
+        let value = NSLocalizedString("value", comment: "")
         if fileManager.fileExists(atPath: dataUrl.path){
             if let bmidata = try? Data(contentsOf: dataUrl){
                 if let bmi = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(bmidata) as? Bmi {
-                    valueLabel.text = "你的BMI是\(String(format: "%.2f",bmi.value))"
+                    valueLabel.text =  value + "\(String(format: "%.2f",bmi.value))"
                     tvOutcome.text = bmi.show(value: bmi.value)
                 } else{
                     tvOutcome.text = "error"
